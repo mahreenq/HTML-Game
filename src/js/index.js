@@ -3,11 +3,13 @@
 var myGamePiece;
 var myObstacles = [];
 var myScore;
+var gameOver;
 
 function startGame() {
     myGamePiece = new component(20, 20, "purple", 10, 200);
     myObstacle = new component(10, 200, "yellow", 300, 120); 
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Verdana", "white", 280, 40, "text");
+    gameOver = new component("30px", "Verdana", "white", 280, 40, "text");
     myGameArea.start();
 }
 
@@ -81,6 +83,7 @@ function component(width, height, color, x, y, type) {
            crash = false;
         }
         return crash;
+        
     }
 }
 
@@ -89,13 +92,14 @@ function updateGameArea() {
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
+            console.log('game over');
             return;
         } 
     }
     myGameArea.clear();
     myGameArea.frameNo += 1;
     myGameArea.frameNo += 1;
-    if (myGameArea.frameNo == 1 || everyinterval(150)) {
+    if (myGameArea.frameNo == 1 || everyinterval(160)) {
         x = myGameArea.canvas.width;
         minHeight = 20;
         maxHeight = 200;
@@ -103,7 +107,7 @@ function updateGameArea() {
         minGap = 60;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "pink", x, 0));
+        myObstacles.push(new component(10, height, "deeppink", x, 0));
         myObstacles.push(new component(10, x - height - gap, "yellow", x, height + gap));
     }
 
