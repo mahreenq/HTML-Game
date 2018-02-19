@@ -1,4 +1,4 @@
-<h1> My First attempt at coding an HTML game! </h1>
+<h1> Coding an HTML game! </h1>
 
 <p> I played around with the canvas element, used HTML, SCSS and Javascript to code this simple game. </p>
 
@@ -6,4 +6,6 @@
 
 <br> <br>
 <img alt="First screenshot of game" src="/build/assets/screenshot01.png">
+<br>
+<br>
 <img alt="Second screenshot of game"  src="/build/assets/screenshot02.png">
