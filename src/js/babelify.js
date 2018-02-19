@@ -157,6 +157,8 @@ function stopMove() {
     myGamePiece.speedY = 0;
 }
 
-console.log("hedworkgdsy");
+function refreshPage() {
+    window.location.reload();
+}
 
 },{}]},{},[1]);

@@ -152,4 +152,6 @@ function stopMove() {
 }
 
 
- console.log("hedworkgdsy");
+function refreshPage(){
+    window.location.reload();
+} 
