@@ -1,0 +1,169 @@
+/* flex.scss (Mahreen Qureshi) */
+
+.flex{
+	display:flex;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-row{
+	flex-direction: row;
+}
+.align-items-center{
+	align-items: center;
+}
+.text-align-center{
+	text-align: center;
+}
+.justify-content-space-between{
+	justify-content: space-between;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-space-around{
+	justify-content: space-around;
+}
+.justify-content-flex-end{
+	justify-content: flex-end;
+}
+.align-self-flex-start{
+	align-self: flex-start;
+}
+.align-self-flex-end{
+	align-self: flex-end;
+}
+.align-self-center{
+	align-self:center;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.text-align-center{
+	text-align: center;
+}
+.text-align-left{
+	text-align: left;
+}
+
+
+//TABLET
+@media only screen
+and (min-width:600px )
+and (max-width:1000px) {
+
+	.flex-tablet{
+		display:flex;
+	}
+	
+	.flex-direction-column-tablet{
+	  flex-direction: column;
+	}
+	.flex-direction-row-tablet{
+		flex-direction: row;
+	}
+	.align-items-center-tablet{
+		align-items: center;
+	}
+	.text-align-center-tablet{
+		text-align: center;
+	}
+	.justify-content-space-between-tablet{
+		justify-content: space-between;
+	}
+	.justify-content-center-tablet{
+	  justify-content: center;
+	}
+	.justify-content-center-tablet{
+		justify-content: center;
+	}
+	.justify-content-space-around-tablet{
+		justify-content: space-around;
+	}
+	.justify-content-flex-end-tablet{
+		justify-content: flex-end;
+	}
+	.align-self-flex-start-tablet{
+		align-self: flex-start;
+	}
+	.align-self-flex-end-tablet{
+		align-self: flex-end;
+	}
+	.align-self-center-tablet{
+		align-self:center;
+	}
+	.flex-wrap-tablet{
+		flex-wrap: wrap;
+	}
+	.text-align-center-tablet{
+		text-align: center;
+	}
+	.text-align-left-tablet{
+		text-align: left;
+	}
+	.text-align-right-tablet{
+		text-align: right
+	}
+
+}
+
+
+//DESKTOP
+@media only screen
+and (min-width:1000px){
+
+
+	.flex-desktop{
+		display:flex;
+	}
+	.flex-direction-column-desktop{
+	  flex-direction: column;
+	}
+	.flex-direction-row-desktop{
+		flex-direction: row;
+	}
+	.align-items-center-desktop{
+		align-items: center;
+	}
+	.text-align-center-desktop{
+		text-align: center;
+	}
+	.justify-content-space-between-desktop{
+		justify-content: space-between;
+	}
+	.justify-content-center-desktop{
+	  justify-content: center;
+	}
+	.justify-content-center-desktop{
+		justify-content: center;
+	}
+	.justify-content-space-around-desktop{
+		justify-content: space-around;
+	}
+	.justify-content-flex-end-desktop{
+		justify-content: flex-end;
+	}
+	.align-self-flex-start-desktop{
+		align-self: flex-start;
+	}
+	.align-self-flex-end-desktop{
+		align-self: flex-end;
+	}
+	.align-self-center-desktop{
+		align-self:center;
+	}
+	.flex-wrap-desktop{
+		flex-wrap: wrap;
+	}
+	.text-align-center-desktop{
+		text-align: center;
+	}
+	.text-align-left-desktop{
+		text-align: left;
+	}
+	.text-align-right-desktop{
+		text-align: right
+	}
+
+
+}
