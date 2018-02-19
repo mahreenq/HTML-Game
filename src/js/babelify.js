@@ -6,11 +6,10 @@
 var myGamePiece;
 var myObstacles = [];
 var myScore;
-var gameOver;
 
 function startGame() {
     myGamePiece = new component(20, 20, "purple", 10, 200);
-    myObstacle = new component(10, 200, "yellow", 300, 120);
+    // myObstacle = new component(10, 200, "yellow", 300, 120); 
     myScore = new component("30px", "Verdana", "white", 280, 40, "text");
     gameOver = new component("30px", "Verdana", "white", 280, 40, "text");
     myGameArea.start();
