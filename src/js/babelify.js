@@ -93,6 +93,7 @@ function updateGameArea() {
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
+            document.getElementById("tryAgain").style.display = "block";
             console.log('game over');
             return;
         }

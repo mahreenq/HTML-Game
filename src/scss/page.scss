@@ -17,3 +17,19 @@ body{
     background-color: rgb(94, 5, 121);
     color: white;
 }
+
+button {
+    font-size: 1.2rem;
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(8, 233, 233, 0.432);
+    border: none;
+    outline: none;
+}
+button:hover{
+    border: 2px solid white;
+}
+
+.display-none{
+    display: none;
+}

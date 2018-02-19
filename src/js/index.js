@@ -5,6 +5,8 @@ var myObstacles = [];
 var myScore;
 var gameOver;
 
+
+
 function startGame() {
     myGamePiece = new component(20, 20, "purple", 10, 200);
     myObstacle = new component(10, 200, "yellow", 300, 120); 
@@ -92,6 +94,7 @@ function updateGameArea() {
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
             myGameArea.stop();
+            document.getElementById("tryAgain").style.display = "block";
             console.log('game over');
             return;
         } 
